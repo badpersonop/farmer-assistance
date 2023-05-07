@@ -1,0 +1,160 @@
+:root {
+  /* Font Family */
+  --font-family-jost: "Jost", sans-serif;
+
+  /* Font Weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* Font Sizes */
+  --font-size-500: clamp(2rem, 1rem + 3vw, 2.75rem);
+  --font-size-400: 1.75rem;
+  --font-size-300: 1.5rem;
+  --font-size-200: 1.25rem;
+  --font-size-100: 0.9375rem;
+
+  /* Colors */
+  --peach: hsl(11, 73%, 66%);
+  --dark-peach: hsl(11, 66%, 64%);
+  --black: hsl(270, 3%, 11%);
+  --white: hsl(0, 0%, 100%);
+  --dark-grey: hsl(264, 5%, 20%);
+  --light-grey: hsl(210, 17%, 95%);
+  --grey: hsl(0, 0%, 100%, 0.65);
+
+  /* Spacing */
+  --gap: 1rem;
+  --flow-space: 1.25rem;
+  --section-padding: clamp(3rem, 8vw, 5rem);
+
+  /* Border Radius*/
+  --border-radius-100: 0.75rem;
+
+  --letter-spacing-200: 0.3125em;
+  --letter-spacing-100: 0.125em;
+}
+
+@media (min-width: 48em) {
+  :root {
+    --font-size-500: 3rem;
+    --font-size-300: 0.875rem;
+    --font-size-400: 2.5rem;
+    --font-size-100: 1rem;
+    --hero-padding: 5rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family-jost);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+  color: var(--black);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utilities */
+.visually-hidden {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Spacing */
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+/* Flex Utility Class */
+.flex {
+  display: flex;
+}
+
+.flex--gap {
+  gap: var(--gap);
+}
+
+.flex--justify-space {
+  justify-content: space-between;
+}
+
+.flex--align-center {
+  align-items: center;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid Utility Class */
+.grid {
+  display: grid;
+}
+
+.grid--gap {
+  gap: var(--gap);
+}
+
+.grid--content-center {
+  place-content: center;
+}
+
+.grid--items-center {
+  place-items: center;
+}

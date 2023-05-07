@@ -1,0 +1,26 @@
+.hero {
+  padding-block-start: 2rem;
+  padding-block-end: 3rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.hero__heading {
+  font-size: var(--font-size-500);
+}
+
+.hero__btn {
+  justify-self: center;
+}
+
+@media (min-width: 48em) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+
+  .hero__btn {
+    justify-self: start;
+  }
+}
