@@ -4,7 +4,9 @@ import Container from "../../components/UI/Container/Container";
 function Weather() {
   return (
     <Layout>
-      <Container>This is Weather</Container>
+      <Container>
+        <h1 className="text--center">Weather</h1>
+      </Container>
     </Layout>
   );
 }
