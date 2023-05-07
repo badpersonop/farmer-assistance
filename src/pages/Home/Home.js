@@ -3,6 +3,7 @@ import Container from "../../components/UI/Container/Container";
 import heroImage from "../../assets/home/hero.jpg";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Button from "../../components/UI/Button/Button";
 
 function Home() {
   return (
@@ -19,9 +20,11 @@ function Home() {
               information about various crops technique to grow, crop's rates,
               government schemes for farmers and weather forecasting.
             </p>
-            <Link className="hero__btn btn btn--green" to="/tutorial">
-              Watch Tutorial
-            </Link>
+            <Button className="hero__btn btn btn--green">
+              <Link className="hero__btn-link" to="/tutorial">
+                Watch Tutorial
+              </Link>
+            </Button>
           </div>
           <div className="hero__image-wrapper">
             <img src={heroImage} alt="Hero" />
