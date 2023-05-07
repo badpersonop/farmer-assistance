@@ -5,4 +5,4 @@ schemes for farmers and weather forecasting.
 
 ### Links
 
-- Live Site URL: [https://farmers-assistance-10.vercel.app/]
+- Live Site URL: [https://farmer-assistance-10.netlify.app/]
