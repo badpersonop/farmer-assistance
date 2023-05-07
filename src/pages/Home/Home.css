@@ -12,6 +12,8 @@
 
 .hero__btn {
   justify-self: center;
+  text-decoration: none;
+  color: var(--black);
 }
 
 @media (min-width: 48em) {

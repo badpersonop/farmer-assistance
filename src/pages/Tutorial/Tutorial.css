@@ -1,0 +1,10 @@
+.video {
+  width: 100%;
+  height: 30rem;
+}
+
+@media (min-width: 48em) {
+  .video {
+    height: 45rem;
+  }
+}
