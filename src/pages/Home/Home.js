@@ -2,7 +2,6 @@ import Layout from "../../layout/Layout";
 import Container from "../../components/UI/Container/Container";
 import heroImage from "../../assets/home/hero.jpg";
 import "./Home.css";
-import Button from "../../components/UI/Button/Button";
 import { Link } from "react-router-dom";
 
 function Home() {
